@@ -36,10 +36,10 @@ function addTextToImage() {
     switch (selectedImage) {
         case '0':
             imagePath = './temps/eidCard.jpg';
-            rx = 800;
-            ry = 855;
-            sx = 800;
-            sy = 955;
+            rx = 495;
+            ry = 860;
+            sx = 540;
+            sy = 960;
             DesignNumber.innerHTML = 'Design Name: Blue Eid-ul-Fitr';
             break;
 
