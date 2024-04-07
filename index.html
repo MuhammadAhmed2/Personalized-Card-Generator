@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="senderName" placeholder="Sender's Name">
+        <input type="text" id="receiverName" placeholder="Receiver's Name">
+        <label for="senderColor">Text Color:</label>
+        <input type="color" id="senderColor" value="#000000">
+        <br>
+        <label for="font-size">Font Size:</label>
+        <input type="number" id="font-size" value="60">
+        <!-- <label for="receiverColor">Receiver's Text Color:</label>
+        <input type="color" id="receiverColor" value="#ffffff"> -->
+
+        
+        <button onclick="addTextToImage()">Add Text</button>
+
+        <br> <br>
+        <label for="imgSlider">Slide to Choose Design:</label>
+        <br>
+        <input type="range" min="0" max="5" value="0" class="slider" id="imgSlider">
+        <br><br>
+        <label for="imgSlider" id="DesignNumber"></label>
+        <canvas id="canvas"></canvas>
+        <button onclick="downloadImage()">Download Image</button>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
