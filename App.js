@@ -1,17 +1,14 @@
 var DesignNumber = document.getElementById('DesignNumber');
 
 function addTextToImage() {
-    // var senderName = document.getElementById('senderName').value;
-    // var receiverName = document.getElementById('receiverName').value;
-    var senderName = 'sender'
-    var receiverName = 'reciver'
+    var senderName = document.getElementById('senderName').value;
+    var receiverName = document.getElementById('receiverName').value;
     var senderColor = document.getElementById('senderColor').value;
     
 
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     var fS = document.getElementById('font-size').value
-    var fontSize=fS+'px';
     var img = new Image();
     img.onload = function() {
         canvas.width = img.width;

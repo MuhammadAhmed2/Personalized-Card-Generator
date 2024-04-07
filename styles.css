@@ -14,13 +14,23 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align the content */
 }
 
-input[type="text"],
-input[type="color"],
-button {
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="color"], input[type="number"], button, input[type="range"] {
     width: calc(100% - 20px);
-    margin: 10px;
+    margin: 10px 0;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -38,7 +48,7 @@ canvas {
     display: block;
     max-width: 100%;
     height: auto;
-    margin-top: 5px;
+    margin: 20px auto;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
