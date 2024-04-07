@@ -4,6 +4,13 @@ function addTextToImage() {
     var senderName = document.getElementById('senderName').value;
     var receiverName = document.getElementById('receiverName').value;
     var senderColor = document.getElementById('senderColor').value;
+
+    if (senderName == '') {
+        senderName='Sender Name';
+    }
+    if (receiverName == '') {
+        receiverName='Receiver Name';
+    }
     
 
     var canvas = document.getElementById('canvas');
