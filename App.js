@@ -103,7 +103,7 @@ function addTextToImage() {
 function downloadImage() {
     var canvas = document.getElementById('canvas');
     var link = document.createElement('a');
-    link.download = 'image_with_text.png';
+    link.download = 'Free_Card_Gen.png';
     link.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
     link.click();
 }
